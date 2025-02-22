@@ -1,6 +1,24 @@
-@Sales.API_HostAddress = http://localhost:5087
+@Sales.API_HostAddress = https://localhost:7181
 
 GET {{Sales.API_HostAddress}}/weatherforecast/
 Accept: application/json
+
+###
+
+GET {{Sales.API_HostAddress}}/weatherforecast
+
+###
+
+POST {{Sales.API_HostAddress}}/api/countries
+Content-Type: application/json
+
+{
+  "id":0,
+  "name": "Argentina"
+}
+
+###
+
+GET {{Sales.API_HostAddress}}/api/countries
 
 ###
